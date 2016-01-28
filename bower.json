@@ -1,0 +1,20 @@
+{
+  "name": "Finder",
+  "authors": [
+    "goodbedford <bedford@goodbedford.com>"
+  ],
+  "description": "find matching letters in two strings",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/lib",
+    "test",
+    "tests"
+  ]
+}
