@@ -1,0 +1,14 @@
+
+
+.answer-title {
+    border-bottom: 1px solid;
+}
+.dup-panel {
+    background-color: lightgrey;
+}
+.instructions {
+    padding: 10px;
+}
+.title {
+    font-weight: bold;
+}

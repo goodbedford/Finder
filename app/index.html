@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="finderApp">
 <head>
     <meta charset="UTF-8">
     <title>Letter Finder</title>
     <!-- viewport -->
     <!-- favicon -->
     <!-- angular material -->
-    <link rel="stylesheet" href="lib/angular-material/angular-material.css"/>
+    <link rel="stylesheet" ng-href="lib/angular-material/angular-material.css"/>
     <!-- mystyle -->
-
+    <link rel="stylesheet" ng-href="assets/css/style.css"/>
     <!-- get rid of # -->
     <base href="/">
 </head>
 <body>
-<h2>Letter Finder</h2>
-<!-- nav -->
+    <div layout="column">
+        <!-- nav -->
+        <div ng-include="'layout/nav.template.html'"></div>
 
-<ui-view></ui-view>
+        <ui-view></ui-view>
+    </div>
 <!-- jquery -->
 
 <!-- angular, animate, aria, messages, material, resource -->
@@ -36,8 +38,9 @@
 <script src="app.config.js"></script>
 
 <!-- layout features--->
-<script src="layout/navController.js"></script>
-
+<script src="layout/NavController.js"></script>
+<script src="layout/HomeController.js"></script>
+<script src="layout/DupFinderService.js"></script>
 <!-- features  -->
 <!-- features -->
 
