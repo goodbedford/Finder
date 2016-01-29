@@ -1,0 +1,30 @@
+<div layout="row">
+    <div flex="20"  flex-offset="5">
+        <h2>Instructions</h2>
+        <p>Enter two strings as inputs. The first result will contain all the character matches from
+           the first string. The second result will show how many times a letter from the second word is
+           duplicated.
+        </p>
+    </div>
+    <div flex="30" flex-offset="5">
+    <md-content id="wordForm">
+            <form id="dupForm" action="">
+                <md-input-container><label for="string1">String-1</label><input id="string1" type="text" ng-model="home.string1"/></md-input-container>
+                <md-input-container><label for="string2">String-2</label><input id="string2" type="text" ng-model="home.string2"/></md-input-container>
+                <div layout>
+                    <md-input-container ><md-button ng-click="home.findDups(home.string1, home.string2)">Submit</md-button></md-input-container>
+                </div>
+            </form>
+    </md-content>
+        </div>
+    <div layout="column" flex-offset="5">
+    <md-content>
+        <div><h2 class="answer-title">Answers List</h2></div>
+            <div  ng-repeat="result in home.dupList track by $index">
+                <p><span class="title">String1:</span>{{result.strOne}} -- <span class="title">String2:</span>{{result.strTwo}}</p>
+                <p><span class="title">Single Dup:</span>{{result.singleDup}}</p>
+                <p><span class="title">All Dups:</span>{{result.allDups}}</p>
+            </div>
+    </md-content>
+    </div>
+</div>
