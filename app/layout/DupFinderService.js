@@ -79,12 +79,12 @@
 
                 for(var key in obj) {
                     if(obj.hasOwnProperty(key)) {
-                        newStrWithNum += key + ":" + obj[key];
+                        newStrWithNum += key + ":" + obj[key] + " ";
                         newStr += key;
                     }
                 }
 
-                return newStr + " " +newStrWithNum;
+                return "'" + newStr + "'" + " " +newStrWithNum;
             };
 
 
